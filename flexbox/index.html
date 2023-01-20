@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        body{
+            background:rgb(27, 27, 27);
+        }
+        .container {
+            display:flex;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+        }
+
+        .card{
+            background:white;
+            width: 270px;
+            margin: 10px;
+            border-radius: 15px;
+         }
+         .card-image{
+            height: 170px;
+            margin-bottom: 15px;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;
+
+         }
+         .dog-1{
+            background-image: url('./images/dog1.png');
+            background-size: cover;
+            
+         }
+         .dog-2{
+            background-image: url('./images/dog2.png');
+            background-size: cover;
+         }
+         .dog-3{
+            background: url('./images/dog3.png');
+            background-size: cover;
+         }
+         .card p{
+            padding: 10px;
+         }
+         .card a{
+            background-color: black;
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            text-align: center;
+            margin: 20px 50px;
+            text-decoration-color: bisque;
+         }
+
+         .card:hover{
+            background-color:rgb(62,62,62);
+            color:white;
+            cursor:pointer;
+            transform:scale(1.03);
+            transition: all 1s ease;
+
+         }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive card flexbox</title>
+
+</head>
+<body>
+    <section  class="container">
+        <div class="card">
+            <div class="card-image dog-1"></div>
+            <h2> Labrador</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, optio ducimus unde maiores dicta labore assumenda error eum atque nostrum a fugiat odit, suscipit possimus eaque dignissimos magnam veniam.</p>
+            <a href="">READ MORE</a>
+        </div>
+        <div class="card">
+            <div class="card-image dog-2"></div>
+            <h2> Golden Retriever</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatibus, qui laborum reiciendis nulla tempora natus magni expedita cupiditate animi non! Dolorem iure sequi itaque, mollitia autem quibusdam beatae suscipit.</p>
+            <a href="">READ MORE</a>
+        </div>
+        <div class="card">
+            <div class="card-image dog-3"></div>
+            <h2> German Shepherd</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quasi totam, suscipit sequi est voluptatum recusandae, porro, perspiciatis quas sapiente aspernatur. Tenetur facilis vitae vero aliquid magnam unde quidem illum.</p>
+            <a href="">READ MORE</a>
+        </div>
+    </section>
+    
+</body>
+</html>
